@@ -66,3 +66,13 @@ https://draftcall.io/download/
 
 This repository exists to register the hosted server and document its tools.
 The server itself runs at the endpoint above; there is nothing to install here.
+
+## License
+
+The contents of this repository (the registry manifest and these docs) are MIT
+licensed. See [LICENSE](LICENSE).
+
+That covers this repo only. The DraftCall service, the data it returns, and the
+DraftCall name are not covered: use of the endpoint is governed by
+https://draftcall.io/terms/, and DraftCall is a trademark of Pizza Robot Studios
+LLC (USPTO Serial 99762133).
