@@ -70,7 +70,7 @@ The server itself runs at the endpoint above; there is nothing to install here.
 ## License
 
 The contents of this repository (the registry manifest and these docs) are MIT
-licensed. See [LICENSE](LICENSE).
+licensed. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
 That covers this repo only. The DraftCall service, the data it returns, and the
 DraftCall name are not covered: use of the endpoint is governed by

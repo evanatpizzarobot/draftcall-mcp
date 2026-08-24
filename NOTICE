@@ -1,0 +1,17 @@
+DraftCall MCP
+Copyright (c) 2026 Pizza Robot Studios LLC
+
+SCOPE OF THE MIT LICENSE IN THIS REPOSITORY
+
+The MIT license in LICENSE covers the contents of this repository only: the
+registry manifest (server.json) and the documentation in README.md.
+
+It does not cover, and grants no rights in:
+
+  * The DraftCall service at https://draftcall.io, including the MCP endpoint
+    at https://draftcall.io/mcp. Use of that service is governed by
+    https://draftcall.io/terms/
+  * The data returned by that service.
+  * The DraftCall name and logo. DraftCall is a trademark of Pizza Robot
+    Studios LLC (USPTO Serial 99762133). Nothing in the MIT license grants
+    trademark rights.
