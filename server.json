@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.evanatpizzarobot/draftcall",
+  "description": "NFL fantasy football data for the 2026 season: head-to-head player comparisons, position rankings in PPR, half-PPR and standard scoring, player profiles, positional scarcity, and bye-week conflicts. Free, read-only, no API key.",
+  "version": "1.0.0",
+  "websiteUrl": "https://draftcall.io/mcp-server/",
+  "repository": {
+    "url": "https://github.com/evanatpizzarobot/draftcall-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://draftcall.io/mcp"
+    }
+  ]
+}
