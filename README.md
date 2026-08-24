@@ -36,7 +36,7 @@ claude mcp add --transport http draftcall https://draftcall.io/mcp
 
 ## Tools
 
-Six, all read-only. Nothing here can modify a league, a roster, or an account.
+Seven, all read-only. Nothing here can modify a league, a roster, or an account.
 
 | Tool | Arguments | What it answers |
 |---|---|---|
@@ -46,9 +46,10 @@ Six, all read-only. Nothing here can modify a league, a roster, or an account.
 | `search_players` | `query`, `limit` | Find players by partial name, team, or position. |
 | `get_positional_scarcity` | `scoring_format` | How steep the scoring dropoff is at each position, for draft strategy. |
 | `get_bye_conflicts` | `players` | Which bye weeks two or more rostered players share. |
+| `get_weekly_matchup` | `player`, `week`, `scoring_format` | Who a player faces in a given week of the season, home or away, and how generous that opponent has been to the position. In-season start/sit questions that name a week. |
 
 `scoring_format` accepts PPR, half-PPR and standard. `position` accepts QB, RB,
-WR, TE, FLEX, K and DEF.
+WR, TE, FLEX, K and DEF. `week` accepts 1 through 18.
 
 ## Data
 
