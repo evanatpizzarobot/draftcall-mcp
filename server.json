@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.draftcall/fantasy-football",
   "title": "DraftCall",
-  "description": "Should I start X or Y? NFL fantasy compares, rankings, byes, matchups, schedule strength, checks."",
+  "description": "Should I start X or Y? NFL fantasy compares, rankings, byes, matchups, schedule strength, checks",
   "version": "1.1.0",
   "websiteUrl": "https://draftcall.io/mcp-server/",
   "repository": {
