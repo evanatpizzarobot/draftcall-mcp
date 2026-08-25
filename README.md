@@ -61,7 +61,7 @@ your client supports it; the bridge is a compatibility shim, not the main path.
 
 ## Tools
 
-Nine, all read-only. Nothing here can modify a league, a roster, or an account.
+Ten, all read-only. Nothing here can modify a league, a roster, or an account.
 
 | Tool | Arguments | What it answers |
 |---|---|---|
@@ -73,6 +73,7 @@ Nine, all read-only. Nothing here can modify a league, a roster, or an account.
 | `get_bye_conflicts` | `players` | Which bye weeks two or more rostered players share. |
 | `get_weekly_matchup` | `player`, `week`, `scoring_format` | Who a player faces in a given week of the season, home or away, and how generous that opponent has been to the position. In-season start/sit questions that name a week. |
 | `get_strength_of_schedule` | `team` + `position`, or `player`, or `position` alone | How easy or hard a schedule is for one position, over the full season and over fantasy playoff weeks 14 through 17. A position on its own ranks all 32 teams, easiest first. |
+| `get_adp_market_gaps` | `position`, `direction`, `scoring_format`, `limit` | Players whose consensus average draft position disagrees most with their actual production ranking. Taken earlier than production means the room is drafting on expectation; later means it is drafting on doubt. A disagreement, not a recommendation. |
 | `verify_claim` | `player`, `metric`, `value`, `scoring_format` | Check a stated figure (points per game, games played, bye week, rank, or any season stat) against the data. Confirms it, or returns the real number. Call it before quoting a stat from memory. |
 
 ## Prompts and resources
