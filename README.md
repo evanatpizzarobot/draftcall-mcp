@@ -37,6 +37,28 @@ claude mcp add --transport http draftcall https://draftcall.io/mcp
 }
 ```
 
+### Clients that only speak stdio
+
+Some clients and registries cannot take a remote URL and require a command they
+can run locally. For those, this repository ships a stdio bridge: it forwards
+newline-delimited JSON-RPC to the same hosted endpoint, so the tools, prompts
+and resources are identical and there is still only one server implementation.
+
+```bash
+docker build -t draftcall-mcp .
+docker run --rm -i draftcall-mcp
+```
+
+Or without Docker, using any Node 18 or newer:
+
+```bash
+node stdio-proxy.mjs
+```
+
+The bridge has no dependencies and holds no state. Set `DRAFTCALL_MCP_URL` to
+point it somewhere other than production. Prefer the remote URL above wherever
+your client supports it; the bridge is a compatibility shim, not the main path.
+
 ## Tools
 
 Nine, all read-only. Nothing here can modify a league, a roster, or an account.
@@ -71,11 +93,6 @@ every response carries a `stats_season` field, so a model cannot mistake a
 completed season for a projection. DraftCall publishes no projections, ADP, or
 injury status through this server.
 
-## License
-
-MIT, for the contents of this repository. See [LICENSE](LICENSE) and
-[NOTICE](NOTICE) for what that does and does not cover.
-
 Not affiliated with the NFL or the NFLPA.
 
 ## About
@@ -84,8 +101,9 @@ Built by [Pizza Robot Studios LLC](https://draftcall.io/about/), an independent
 game and app studio in Los Angeles. DraftCall is also an iOS and Android app:
 https://draftcall.io/download/
 
-This repository exists to register the hosted server and document its tools.
-The server itself runs at the endpoint above; there is nothing to install here.
+This repository registers the hosted server, documents its tools, and carries
+the stdio bridge for clients that need one. The server itself runs at the
+endpoint above.
 
 ## License
 
